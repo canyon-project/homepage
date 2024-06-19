@@ -1,0 +1,58 @@
+[
+  {
+    "lang": "en",
+    "title": "GitHub",
+    "img": "github.svg",
+    "content": {
+      "name": "GitHub Issue",
+      "href": "https://github.com/arextest/arex-report/issues/new",
+      "description": " You can submit a bug or suggestion to $ \n Please search for existing issues to confirm whether it’s a known issue before submitting a new one."
+    }
+  },
+  {
+    "lang": "en",
+    "title": "Slack",
+    "img": "slack.svg",
+    "content": {
+      "name": "Join AREX Slack!",
+      "href": "https://join.slack.com/t/arexcommunity/shared_invite/zt-1pb0qukhd-tnLVZN3aisHfIo5SzBjj0Q",
+      "description": "Our Community Groups are great for quick questions or discussions on specialized topics. \n $"
+    }
+  },
+  {
+    "lang": "en",
+    "title": "Twitter",
+    "img": "twitter.svg",
+    "content": {
+      "name": "Follow us on Twitter",
+      "href": "https://twitter.com/AREX_Test",
+      "description": "Follow us on $ to get the latest news and updates."
+    }
+  },
+  {
+    "lang": "zh-Hans",
+    "title": "GitHub",
+    "img": "github.svg",
+    "content": {
+      "name": "提交 Bug 或建议",
+      "href": "https://github.com/arextest/arex-report/issues/new",
+      "description": "$"
+    }
+  },
+  {
+    "lang": "zh-Hans",
+    "title": "QQ 群",
+    "img": "qq.svg",
+    "content": {
+      "description": "加入官方QQ交流群：656108079，AREX 维护者们将积极为你答疑解惑。"
+    }
+  },
+  {
+    "lang": "zh-Hans",
+    "title": "微信公众号",
+    "img": "wechat.svg",
+    "content": {
+      "description": "欢迎关注 AREX 微信公众号（AREX Test），了解 AREX 最新动态！"
+    }
+  }
+]

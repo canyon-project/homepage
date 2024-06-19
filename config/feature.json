@@ -1,0 +1,33 @@
+[
+  {
+    "title": "Reproduce Complex Online Bugs",
+    "description": "Online bugs can be quickly reproduced in the test and development environment to debug",
+    "img": "recurrence_problem"
+  },
+  {
+    "title": "Eliminate Environment Differences",
+    "description": "Intelligent Mock mechanism, support Mock time, cache data, etc",
+    "img": "eliminate_differences"
+  },
+  {
+    "title": "Mock data can be edited",
+    "description": "Meet various testing requirements by editing the mock data",
+    "img": "mock_data_editable"
+  },
+  {
+    "title": "Reduce Replay Noise",
+    "description": "Ignore node at global level and interface level during replay, support comparison of disordered arrays",
+    "img": "reduce_noise"
+  },
+  {
+    "title": "Smart Replay Report",
+    "description": "Highly aggregate the difference points according to the path of Json message to improve troubleshooting efficiency; Include all difference scenarios, without missing any risk points",
+    "img": "replay_report"
+  },
+
+  {
+    "title": "Support Verify the Written Traffic without Dirty Data",
+    "description": "Support verify the data written into databases, message queues, Redis, etc., even support verification of memory data at runtime, and no dirty data will be generated during testing",
+    "img": "flow_check"
+  }
+]

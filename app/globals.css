@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    background: #fbfcfd;
+    min-width: 1250px;
+}
+
+.slick-dots > li.slick-active > button {
+    background: #f1f3f5;
+}
+
+.slick-dots > li > button:after {
+    background: #c1c8cd;
+}
