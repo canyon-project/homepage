@@ -9,14 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "canyon-ui1": "^0.0.2",
-    "next": "14.2.3",
-    "react": "^18",
-    "react-dom": "^18",
     "@ant-design/icons": "^5.3.7",
     "@ant-design/nextjs-registry": "^1.0.0",
     "antd": "^5.17.0",
-    "canyon-ui": "0.0.10-alpha.18"
+    "canyon-ui": "0.0.10-alpha.18",
+    "next": "14.2.3",
+    "react": "^18",
+    "react-dom": "^18"
   },
   "devDependencies": {
     "@types/node": "^20",
@@ -25,6 +24,7 @@
     "eslint": "^8",
     "eslint-config-next": "14.2.3",
     "postcss": "^8",
+    "swc-plugin-coverage-instrument": "^0.0.21",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
   }

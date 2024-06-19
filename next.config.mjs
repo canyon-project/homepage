@@ -12,6 +12,13 @@ const nextConfig = {
         // your project has ESLint errors.
         ignoreDuringBuilds: true,
     },
+    experimental: {
+        swcPlugins: [
+            [
+                'swc-plugin-coverage-instrument', {},
+            ],
+        ],
+    },
 };
 
 export default nextConfig;
