@@ -44,22 +44,22 @@ const pinglunDataSource = [
 const feedbackDataSource = [
   {
     icon: <ReadOutlined/>,
-    link: "https://docs.arextest.com/",
+    link: "https://docs.canyoncov.com/",
     text: "Read the docs",
   },
   {
     icon: <GithubOutlined/>,
-    link: "https://github.com/arextest",
+    link: "https://github.com/canyon-project",
     text: "Join the community",
   },
   {
     icon: <CloudOutlined/>,
-    link: "https://cloud.arextest.com/",
-    text: "About Cloud AREX",
+    link: "https://app.canyoncov.com/",
+    text: "About Cloud Canyon",
   },
   {
     icon: <MutedOutlined/>,
-    link: "https://docs.arextest.com/blog",
+    link: "https://docs.canyoncov.com/",
     text: "Read our blog",
   },
 ];
@@ -162,29 +162,19 @@ export default function Home() {
       <HomepageMainBoard
         banner={
           <div>
-            <img src="/ui/img/bg11.png" className={"w-[450px]"} alt=""/>
-            <img
-              src="/ui/img/img_2.png"
-              className={"w-[320px] top-[21px] right-[-67px] absolute"}
-              alt=""
-            />
-            <img
-              src="/ui/img/img_1.png"
-              className={"w-[350px] bottom-[6px] left-[-60px] absolute"}
-              alt=""
-            />
+            <img className={'w-[600px]'} src="https://raw.githubusercontent.com/canyon-project/canyon/main/screenshots/architecture.png" alt=""/>
           </div>
         }
         copywriter={{
-          firstLine: "AREX Lets You",
-          secondLine: "Confident in Every Iteration.",
-          threeCores: ["Capture", "Replay", "Analyze"],
+          firstLine: "Canyon Lets You",
+          secondLine: "Easily obtain e2e coverage metrics.",
+          threeCores: ["instrument", "automate", "report"],
           introduction:
-            "AREX solves the challenges of automated testing by replicating real online traffic to the test environment for automated API testing.",
+            "Using simple babel configuration to locate code coverage probes and integration with ci/cd tools, developers can easily obtain code coverage metrics for automated tests.",
         }}
-        onClickSignUp={() => window.open("https://cloud.arextest.com/")}
-        onClickLearnWhatNew={() => window.open("https://github.com/arextest/")}
-        onClickReadDocs={() => window.open("https://docs.arextest.com/")}
+        onClickSignUp={() => window.open("https://app.canyoncov.com/")}
+        onClickLearnWhatNew={() => window.open("https://github.com/canyon-project/")}
+        onClickReadDocs={() => window.open("https://docs.canyoncov.com/getting-started/first-coverage")}
       />
       <HomepageCompanies
         dataSource={companiesDataSource}
@@ -192,13 +182,17 @@ export default function Home() {
       />
       <HomepageLearn
         copywriter={[
-          "AREX captures request parameters, return results, and some snapshot data during execution, such as database access parameters and results, as well as parameters and results for accessing remote servers, using AOP. It then sends the snapshot data to the test machine (the machine where code changes occur) to complete a replay process. By comparing the stored data, the data from calling backend requests, and the return results with the data from actual online requests, differences are identified to detect issues within the tested system.",
+          "Canyon is a JavaScript code coverage collection platform. We solve the problem of difficult code coverage collection for developers and QA engineers in end-to-end testing.",
+            "Our users are typically developers or QA engineers building web applications using modern JavaScript frameworks.",
+            `Canyon supports the collection of various types of test coverage`,
+            `- e2e test，such as Cypress、Puppeteer、Playwright`,
+            `- ut test，such as Jest、Mocha`
         ]}
       />
       <HomepageWorkflows
         dataSource={[
           {
-            title: "Capture",
+            title: "instrument",
             children: [
               {
                 title: 'High Coverage Without Writing Tests',
@@ -215,7 +209,7 @@ as mocks for more reliable, affordable testing.`,
             ]
           },
           {
-            title: "Replay",
+            title: "automate",
             children: [
               {
                 title: 'Data Security Assurance',
@@ -235,7 +229,7 @@ experience without the setup of test environment.`,
             ]
           },
           {
-            title: "Analyze",
+            title: "report",
             children: [
               {
                 title: `Intelligent Test Reporting`,
@@ -258,7 +252,7 @@ like ( timestamps, random values) to ensure high quality tests.`,
       {/*<Workflows />*/}
       <HomepagePinglun
         dataSource={pinglunDataSource}
-        onClickSignUp={() => window.open("https://cloud.arextest.com/")}
+        onClickSignUp={() => window.open("https://app.canyoncov.com/")}
       />
       <HomepageFeedback dataSource={feedbackDataSource}/>
       {/*<footer className={"h-[500px]"} />*/}

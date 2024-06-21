@@ -31,7 +31,7 @@ const AppFooter = () => {
                     }
                 >
                     <div className={'flex flex-col gap-4'}>
-                        <div className={'flex items-center text-2xl font-bold cursor-pointer'}>AREX</div>
+                        <div className={'flex items-center text-2xl font-bold cursor-pointer'}>CANYON</div>
 
                         <p className='font-normal text-[14px] leading-[1.5715] tracking-[-0.006rem] text-[#687076]'>
                             Copyright © 2024 Trip.com, Inc. All rights reserved.

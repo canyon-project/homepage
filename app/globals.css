@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-    background: #fbfcfd;
+    background: white;
     min-width: 1250px;
 }
 
