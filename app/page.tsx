@@ -1,25 +1,17 @@
 'use client'
 import {
-  AlignRightOutlined,
   CloudOutlined,
   GithubOutlined,
   MutedOutlined,
   ReadOutlined,
 } from "@ant-design/icons";
 import {
-  HomepageMainBoard,
-  HomepageFeedback,
-  HomepageCompanies,
+  HomepageCompanies, HomepageFeedback,
   HomepageLearn,
-  HomepageWorkflows,
-  HomepagePinglun
-} from "canyon-ui";
-// import Companies from "./components/hompage/companies.tsx";
-// import Feedback from "./components/hompage/feedback.tsx";
-// import Learn from "./components/hompage/learn.tsx";
-// import HomepageMainBoard from "./components/hompage/mainboard.tsx";
-// import Pinglun from "./components/hompage/pinglun.tsx";
-// import Workflows from "./components/hompage/workflows.tsx";
+  HomepageMainBoard,
+  HomepagePinglun,
+  HomepageWorkflows
+} from "@/components/hompage";
 const pinglunDataSource = [
   {
     authorName: "Deputy Director of Testing",

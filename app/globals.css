@@ -14,3 +14,7 @@ body {
 .slick-dots > li > button:after {
     background: #c1c8cd;
 }
+
+a{
+    text-decoration: none;
+}
