@@ -3,18 +3,18 @@
 @tailwind utilities;
 
 body {
-    background: white;
-    min-width: 1250px;
+  background: white;
+  min-width: 1250px;
 }
 
 .slick-dots > li.slick-active > button {
-    background: #f1f3f5;
+  background: #f1f3f5;
 }
 
 .slick-dots > li > button:after {
-    background: #c1c8cd;
+  background: #c1c8cd;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }

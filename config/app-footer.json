@@ -1,0 +1,136 @@
+[
+  {
+    "label": "Product",
+    "value": "/product",
+    "children": [
+      {
+        "label": "Expo on GitHub",
+        "value": "/expo-github"
+      },
+      {
+        "label": "Expo CLI on GitHub",
+        "value": "/expo-cli-github"
+      },
+      {
+        "label": "EAS",
+        "value": "/eas"
+      },
+      {
+        "label": "EAS CLI on GitHub",
+        "value": "/eas-cli-github"
+      },
+      {
+        "label": "Snack",
+        "value": "/snack"
+      },
+      {
+        "label": "Expo Go",
+        "value": "/expo-go"
+      },
+      {
+        "label": "Expo Orbit",
+        "value": "/expo-orbit"
+      },
+      {
+        "label": "Star Us on GitHub",
+        "value": "/star-us-github"
+      }
+    ]
+  },
+  {
+    "label": "Resources",
+    "value": "/resources",
+    "children": [
+      {
+        "label": "Docs",
+        "value": "/docs"
+      },
+      {
+        "label": "Job Board",
+        "value": "/job-board"
+      },
+      {
+        "label": "Join Discord",
+        "value": "/join-discord"
+      },
+      {
+        "label": "Changelog",
+        "value": "/changelog"
+      },
+      {
+        "label": "Support",
+        "value": "/support"
+      }
+    ]
+  },
+  {
+    "label": "Company",
+    "value": "/company",
+    "children": [
+      {
+        "label": "Home",
+        "value": "/home"
+      },
+      {
+        "label": "Pricing",
+        "value": "/pricing"
+      },
+      {
+        "label": "About",
+        "value": "/about",
+        "children": [
+          {
+            "label": "About Us",
+            "value": "/about-us"
+          },
+          {
+            "label": "Our Team",
+            "value": "/our-team"
+          },
+          {
+            "label": "Careers",
+            "value": "/careers"
+          }
+        ]
+      },
+      {
+        "label": "Work at Expo",
+        "value": "/work-at-expo"
+      },
+      {
+        "label": "Blog",
+        "value": "/blog"
+      },
+      {
+        "label": "Newsletter",
+        "value": "/newsletter"
+      }
+    ]
+  },
+  {
+    "label": "Legal",
+    "value": "/legal",
+    "children": [
+      {
+        "label": "Terms of Service",
+        "value": "/terms-of-service"
+      },
+      {
+        "label": "Fair Use Policy",
+        "value": "/fair-use-policy"
+      },
+      {
+        "label": "Privacy Policy",
+        "value": "/privacy-policy"
+      },
+      {
+        "label": "Privacy Explained",
+        "value": "/privacy-explained"
+      },
+      {
+        "label": "Guidelines",
+        "value": "/guidelines"
+      }
+    ]
+  }
+]

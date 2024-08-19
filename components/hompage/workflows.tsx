@@ -5,71 +5,69 @@ import type { FC, ReactNode } from "react";
 import Margin from "../margin.tsx";
 const { Text } = Typography;
 const Ig: FC<{ url: string; index: number; bgc: string }> = ({
-	url,
-	index,
-	bgc,
+  url,
+  index,
+  bgc,
   title,
-                                                               desc,
-                                                               img
+  desc,
+  img,
 }) => {
-	return (
-		<div className={"w-[480px] relative"}>
-			<em
-				className="absolute z-10 left-[-89.5px] w-[20px] h-[20px] bg-white rounded-full"
-				style={{
-					border: `2px solid ${bgc}`,
-					left: `${index % 2 === 1 ? "-89.5" : "615"}px`,
-				}}
-			/>
-			<h3 className="text-default text-[20px] font-semibold leading-[1.5] tracking-[-0.017rem] max-md-gutters:text-[18px] max-md-gutters:leading-[1.5555] max-sm-gutters:text-[16px] max-sm-gutters:leading-[1.625] mb-1">
+  return (
+    <div className={"w-[480px] relative"}>
+      <em
+        className="absolute z-10 left-[-89.5px] w-[20px] h-[20px] bg-white rounded-full"
+        style={{
+          border: `2px solid ${bgc}`,
+          left: `${index % 2 === 1 ? "-89.5" : "615"}px`,
+        }}
+      />
+      <h3 className="text-default text-[20px] font-semibold leading-[1.5] tracking-[-0.017rem] max-md-gutters:text-[18px] max-md-gutters:leading-[1.5555] max-sm-gutters:text-[16px] max-sm-gutters:leading-[1.625] mb-1">
         {title}
-			</h3>
-			<Text
-				type={"secondary"}
-				className="font-normal text-[16px] leading-[1.625] tracking-[-0.011rem] text-secondary mb-6"
-			>
+      </h3>
+      <Text
+        type={"secondary"}
+        className="font-normal text-[16px] leading-[1.625] tracking-[-0.011rem] text-secondary mb-6"
+      >
         {desc}
-			</Text>
-			<div className="pt-3">
-        {img}
-			</div>
-		</div>
-	);
+      </Text>
+      <div className="pt-3">{img}</div>
+    </div>
+  );
 };
 const bgcList = [
-	{
-		lv0: "#f5faff",
-		lv1: "#edf6ff",
-		lv2: "#96c7f2",
-		lv3: "#0081f1",
-	},
-	{
-		lv0: "#fef8f4",
-		lv1: "#fff1e7",
-		lv2: "#ffb381",
-		lv3: "#ed5f00",
-	},
-	{
-		lv0: "#f2fcf5",
-		lv1: "#e9f9ee",
-		lv2: "#92ceac",
-		lv3: "#299764",
-	},
+  {
+    lv0: "#f5faff",
+    lv1: "#edf6ff",
+    lv2: "#96c7f2",
+    lv3: "#0081f1",
+  },
+  {
+    lv0: "#fef8f4",
+    lv1: "#fff1e7",
+    lv2: "#ffb381",
+    lv3: "#ed5f00",
+  },
+  {
+    lv0: "#f2fcf5",
+    lv1: "#e9f9ee",
+    lv2: "#92ceac",
+    lv3: "#299764",
+  },
 ];
 const Workflows: FC<{
-	dataSource: {
-		title: string;
-		children: {
-			title: string;
-			desc: string;
-			img: ReactNode;
-		}[];
-	}[];
+  dataSource: {
+    title: string;
+    children: {
+      title: string;
+      desc: string;
+      img: ReactNode;
+    }[];
+  }[];
 }> = ({ dataSource }) => {
-	return (
+  return (
     <Margin>
-      <div className={"pt-20"}/>
-      {dataSource.map(({title, children}, index) => {
+      <div className={"pt-20"} />
+      {dataSource.map(({ title, children }, index) => {
         return (
           <div className={"relative"} key={String(index)}>
             <div className={"flex items-center justify-center z-10 relative"}>
@@ -90,7 +88,7 @@ const Workflows: FC<{
                   }}
                 >
                   <CodepenOutlined
-                    style={{fontSize: 30, color: bgcList[index].lv3}}
+                    style={{ fontSize: 30, color: bgcList[index].lv3 }}
                   />
                   <span
                     className={"text-[25px] font-semibold"}
@@ -98,8 +96,8 @@ const Workflows: FC<{
                       color: bgcList[index].lv3,
                     }}
                   >
-										{title}
-									</span>
+                    {title}
+                  </span>
                 </div>
               </div>
             </div>
@@ -111,15 +109,16 @@ const Workflows: FC<{
               className={" w-[1px] h-[100%] absolute left-1/2 top-0"}
             />
 
-            <div
-              className="relative grid grid-cols-2 gap-x-40 max-lg-gutters:mt-8 max-lg-gutters:grid-cols-auto-min-1 max-lg-gutters:gap-y-16 max-lg-gutters:pl-10">
-
-
-              {
-                children.map(({title, desc, img}, childrenindex) => {
-                  return <div className={"relative1 top-[50px]"} style={{
-                    paddingTop: `${(childrenindex < 2 ? (1 + childrenindex) : 0) * 50}px`
-                  }} key={String(childrenindex)}>
+            <div className="relative grid grid-cols-2 gap-x-40 max-lg-gutters:mt-8 max-lg-gutters:grid-cols-auto-min-1 max-lg-gutters:gap-y-16 max-lg-gutters:pl-10">
+              {children.map(({ title, desc, img }, childrenindex) => {
+                return (
+                  <div
+                    className={"relative1 top-[50px]"}
+                    style={{
+                      paddingTop: `${(childrenindex < 2 ? 1 + childrenindex : 0) * 50}px`,
+                    }}
+                    key={String(childrenindex)}
+                  >
                     <Ig
                       title={title}
                       desc={desc}
@@ -128,8 +127,8 @@ const Workflows: FC<{
                       bgc={bgcList[index].lv2}
                     />
                   </div>
-                })
-              }
+                );
+              })}
 
               {/*<div className={"relative1 top-[50px] pt-[50px]"}>*/}
               {/*  <Ig*/}
@@ -156,7 +155,7 @@ const Workflows: FC<{
           </div>
         );
       })}
-      <div className={"pt-20"}/>
+      <div className={"pt-20"} />
       {/*<div className={"h-[500px]"} />*/}
     </Margin>
   );

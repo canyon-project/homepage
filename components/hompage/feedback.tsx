@@ -2,27 +2,27 @@ import { ArrowRightOutlined } from "@ant-design/icons";
 import type { FC, ReactNode } from "react";
 
 const Feedback: FC<{
-	dataSource: {
-		icon: ReactNode;
-		link: string;
-		text: string;
-	}[];
+  dataSource: {
+    icon: ReactNode;
+    link: string;
+    text: string;
+  }[];
 }> = ({ dataSource }) => {
-	return (
-    <div className={'bg-[#f8f9fa]'}>
+  return (
+    <div className={"bg-[#f8f9fa]"}>
       <div className={"w-[1000px] m-auto py-24"}>
         <h2>Want to learn more?</h2>
         <div className={"flex gap-6"}>
-          {dataSource.map(({icon, text, link}, index) => {
+          {dataSource.map(({ icon, text, link }, index) => {
             return (
               <div
-                style={{border: "1px solid #dfe3e6"}}
+                style={{ border: "1px solid #dfe3e6" }}
                 className={"w-full rounded shadow bg-white"}
                 key={String(index)}
               >
                 <div
                   className={"h-[120px] flex items-center justify-center"}
-                  style={{fontSize: "36px"}}
+                  style={{ fontSize: "36px" }}
                 >
                   {icon}
                 </div>
@@ -39,7 +39,7 @@ const Feedback: FC<{
                   rel="noreferrer"
                 >
                   {text}
-                  <ArrowRightOutlined/>
+                  <ArrowRightOutlined />
                 </a>
               </div>
             );
@@ -47,7 +47,6 @@ const Feedback: FC<{
         </div>
       </div>
     </div>
-
   );
 };
 
