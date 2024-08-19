@@ -3,7 +3,7 @@
 
 // import {Button} from "antd";
 import appFooter from "../config/app-footer.json";
-import { Button } from "antd";
+import { Button, Divider } from "antd";
 import { EpTopRight } from "@/components/icons/RightTop";
 import Icon from "@ant-design/icons";
 const AppFooter = () => {
@@ -29,9 +29,19 @@ const AppFooter = () => {
                 <ul className={"list-none text-[#687076] pl-0"}>
                   {item.children.map((child) => {
                     return (
-                      <li className={"px-3.5 py-2"}>
+                      <li
+                        style={{lineHeight:1.5}}
+                        key={child.value}
+                        className={
+                          "px-3.5 py-2 flex items-center rounded gap-1 cursor-pointer hover:bg-gray-100"
+                        }
+                      >
                         {child.label}
-                        <Icon component={EpTopRight} className={'text-amber-500'} />
+                        <img
+                          className={"w-[16px]"}
+                          src="/icons/svgexport-27.svg"
+                          alt=""
+                        />
                       </li>
                     );
                   })}
@@ -42,14 +52,20 @@ const AppFooter = () => {
         </nav>
         <section
           className={
-            "flex items-center justify-between gap-6 max-md-gutters:mt-8 max-md-gutters:flex-wrap-reverse"
+            "mt-20 flex items-center justify-between gap-6 max-md-gutters:mt-8 max-md-gutters:flex-wrap-reverse"
           }
         >
           <div className={"flex flex-col gap-4"}>
             <div
-              className={"flex items-center text-2xl font-bold cursor-pointer"}
+              className={
+                "flex items-center text-2xl font-bold cursor-pointer gap-3"
+              }
             >
-              CANYON
+              Canyon
+              <Divider type={"vertical"} />
+              <img src={"/icons/GitHub.svg"} />
+              <img src={"/icons/X.svg"} />
+              <img src={"/icons/Discord.svg"} />
             </div>
 
             <p className="font-normal text-[14px] leading-[1.5715] tracking-[-0.006rem] text-[#687076]">

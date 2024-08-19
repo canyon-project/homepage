@@ -21,7 +21,7 @@ const HeaderNav = () => {
           <Button type={"text"} href={"https://docs.canyoncov.com"}>
             Docs
           </Button>
-          {/*<Button type={'text'} href={'/pricing'}>Pricing</Button>*/}
+          <Button type={'text'} href={'/pricing'}>Pricing</Button>
           {/*<Button type={'text'} >Download</Button>*/}
           <Button type={"primary"} href={"https://app.canyoncov.com"}>
             Get Started

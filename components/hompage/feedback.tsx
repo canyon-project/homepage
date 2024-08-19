@@ -11,7 +11,7 @@ const Feedback: FC<{
   return (
     <div className={"bg-[#f8f9fa]"}>
       <div className={"w-[1000px] m-auto py-24"}>
-        <h2>Want to learn more?</h2>
+        <h2 className={'mb-8'}>Want to learn more?</h2>
         <div className={"flex gap-6"}>
           {dataSource.map(({ icon, text, link }, index) => {
             return (

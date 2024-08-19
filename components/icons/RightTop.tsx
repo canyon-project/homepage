@@ -4,20 +4,25 @@ import type { SVGProps } from "react";
 export function EpTopRight(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="1em"
-      height="1em"
-      viewBox="0 0 1024 1024"
       {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      className="icon-xs text-button-secondary-icon"
+      role="img"
+      width="24"
+      height="24"
     >
-      <path
-        fill="#fff"
-        d="M768 256H353.6a32 32 0 1 1 0-64H800a32 32 0 0 1 32 32v448a32 32 0 0 1-64 0z"
-      ></path>
-      <path
-        fill="#fff"
-        d="M777.344 201.344a32 32 0 0 1 45.312 45.312l-544 544a32 32 0 0 1-45.312-45.312z"
-      ></path>
+      <g id="arrow-up-right-outline-icon" stroke="#687076">
+        <path
+          id="Icon"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2px"
+          d="M7 17L17 7M17 7H7M17 7V17"
+          stroke="#687076"
+        ></path>
+      </g>
     </svg>
   );
 }

@@ -65,6 +65,7 @@ const Pinglun: FC<{
         className={
           "bg-[#edf6ff] absolute top-[155px] overflow-hidden w-full h-[500px]"
         }
+        style={{borderBottom:'1px solid #d7dbdfed'}}
       >
         <img
           src="/ui/img/signup-stripes.svg"
@@ -72,7 +73,7 @@ const Pinglun: FC<{
           alt="pattern"
         />
       </div>
-      <div className={"relative z-100 text-center"}>
+      <div className={"relative z-100 text-center"} >
         <h2
           className="text-center pt-20"
           style={{ fontSize: "40px", fontWeight: "bolder" }}
