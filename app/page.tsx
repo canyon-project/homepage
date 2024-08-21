@@ -37,7 +37,7 @@ const pinglunDataSource = [
 const feedbackDataSource = [
   {
     icon: <ReadOutlined />,
-    link: "https://docs.canyoncov.com/",
+    link: "https://docs.canyonalls.com/",
     text: "Read the docs",
   },
   {
@@ -47,12 +47,12 @@ const feedbackDataSource = [
   },
   {
     icon: <CloudOutlined />,
-    link: "https://app.canyoncov.com/",
+    link: "https://app.canyonalls.com/",
     text: "About Cloud Canyon",
   },
   {
     icon: <MutedOutlined />,
-    link: "https://docs.canyoncov.com/",
+    link: "https://docs.canyonalls.com/",
     text: "Read our blog",
   },
 ];
@@ -169,13 +169,13 @@ export default function Home() {
           introduction:
             "Using simple babel configuration to locate code coverage probes and integration with ci/cd tools, developers can easily obtain code coverage metrics for automated tests.",
         }}
-        onClickSignUp={() => window.open("https://app.canyoncov.com/")}
+        onClickSignUp={() => window.open("https://app.canyonalls.com/")}
         onClickLearnWhatNew={() =>
           window.open("https://github.com/canyon-project/")
         }
         onClickReadDocs={() =>
           window.open(
-            "https://docs.canyoncov.com/getting-started/first-coverage",
+            "https://docs.canyonalls.com/getting-started/first-coverage",
           )
         }
       />
@@ -290,7 +290,7 @@ like ( timestamps, random values) to ensure high quality tests.`,
       {/*<Workflows />*/}
       <HomepagePinglun
         dataSource={pinglunDataSource}
-        onClickSignUp={() => window.open("https://app.canyoncov.com/")}
+        onClickSignUp={() => window.open("https://app.canyonalls.com/")}
       />
       <HomepageFeedback dataSource={feedbackDataSource} />
       {/*<footer className={"h-[500px]"} />*/}

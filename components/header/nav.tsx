@@ -18,12 +18,12 @@ const HeaderNav = () => {
           <Button type={"text"} href={"/"}>
             Home
           </Button>
-          <Button type={"text"} href={"https://docs.canyoncov.com"}>
+          <Button type={"text"} href={"https://docs.canyonalls.com"}>
             Docs
           </Button>
           <Button type={'text'} href={'/pricing'}>Pricing</Button>
           {/*<Button type={'text'} >Download</Button>*/}
-          <Button type={"primary"} href={"https://app.canyoncov.com"}>
+          <Button type={"primary"} href={"https://app.canyonalls.com"}>
             Get Started
           </Button>
         </div>
